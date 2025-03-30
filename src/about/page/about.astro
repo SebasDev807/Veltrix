@@ -1,18 +1,31 @@
 ---
 ---
 
-<section class="flex items-center flex-col justify-center md:flex-row px-20" id="about">
+<section class="flex flex-col items-center justify-center px-6 md:flex-row md:px-20" id="about">
 
-    <div class="space-y-5 animate__animated animate__fadeIn"> 
-        <h2 class="text-4xl font-bold">¿Quienes somos y que hacemos en <span class="font-[Orbitron] text-sky-900">VELTRIX</span>?</h2>
-        <p class="max-w-150 leading-8 text-lg text-gray-500 font-medium">En Veltrix, desarrollamos software a medida con soluciones eficientes, escalables y seguras. Aplicamos tecnología de vanguardia y las mejores prácticas para garantizar alto rendimiento y optimización. Ya sea desarrollo web, backend o integración de sistemas, ofrecemos soluciones técnicas sólidas para empresas y emprendedores.</p>
+    <div class="space-y-5 animate__animated animate__fadeIn text-center md:text-left"> 
+        <h2 class="text-2xl font-bold md:text-4xl">
+            ¿Quienes somos y que hacemos en <span class="font-[Orbitron] text-sky-900">VELTRIX</span>?
+        </h2>
+        <p class="text-base leading-6 text-gray-500 font-medium max-w-xs md:max-w-lg md:text-lg md:leading-8">
+            En Veltrix, desarrollamos software a medida con soluciones eficientes, escalables y seguras. Aplicamos tecnología de vanguardia y las mejores prácticas para garantizar alto rendimiento y optimización. Ya sea desarrollo web, backend o integración de sistemas, ofrecemos soluciones técnicas sólidas para empresas y emprendedores.
+        </p>
         
-        <button class="p-3 bg-sky-950 rounded-xl text-white w-50">
+        <button class="p-3 bg-sky-950 rounded-xl text-white w-full md:w-50">
             Aprende más
         </button>
     </div>
-
-    <img src="/vex-about.png" alt="Vex_Trabajando" class="min-w-100 animate__animated animate__fadeIn">
-
+    <style>
+        @media (max-width: 768px) {
+            #about {
+                text-align: center;
+            }
+            #about p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+    <img src="/vex-about.png" alt="Vex_Trabajando" class="w-full max-w-xs mt-6 animate__animated animate__fadeIn md:mt-0 md:min-w-100">
 
 </section>
