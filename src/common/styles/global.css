@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "@fontsource/inter";
+@import "@fontsource/orbitron";
+
+
+
+:root {
+  --font-sans: 'Inter', 'sans-serif';
+  --font-orbitron: 'Orbitron', 'sans-serif'
+}

@@ -1,0 +1,35 @@
+---
+import ServiceCard from "../components/ServiceCard.astro"
+
+const services = [
+    { 
+        icon: 'services/web-service',
+        title:'Desarrollo Web',
+        text:'Sitios rápidos, seguros y escalables\ncon diseño intuitivo y de alto rendimiento'
+    },
+    {
+        icon: 'services/mobile-service',
+        title:"Desarrollo Móvil",
+        text: 'Aplicaciones eficientes para IOS y android\ncon gran experiencia de usuario'
+    },
+    {
+        icon:'services/crm-service',
+        title:'Sistemas CRM',
+        text:'Automatizamos procesos con CRMs adaptados\na tu negocio y necesidades'
+    }
+]
+---
+
+<section class="mx-auto text-center space-y-5 mt-20 ">
+    <h3 class="text-2xl font-extrabold text-sky-900">¿Que Ofrecemos?</h3>
+    <h2 class="text-4xl font-black">Nuestros Mejores Servicios</h2>
+    <p class="max-w-2xl mx-auto">
+        Optimizamos tu plataforma para mayor velocidad, seguridad y eficiencia,<br />
+        asegurando tiempos de carga mínimos
+    </p>
+
+    <div class="flex flex-col md:flex-row justify-center items-center gap-8 py-20">
+        {services.map(service => (<ServiceCard {...service}/>
+        ))}
+    </div>
+</section>

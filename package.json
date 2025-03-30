@@ -1,0 +1,22 @@
+{
+  "name": "veltrix-oficial",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.5",
+    "@fontsource/orbitron": "^5.2.5",
+    "@tailwindcss/vite": "^4.0.17",
+    "astro": "^5.5.5",
+    "astro-icon": "^1.1.5",
+    "tailwindcss": "^4.0.17"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^6.0.2"
+  }
+}
